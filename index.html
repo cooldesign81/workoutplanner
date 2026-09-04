@@ -5,36 +5,37 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>Workout Tracker</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
 <style>
   :root{
-    --bg:#11161A;
-    --bg-2:#0D1113;
-    --surface:#1A2124;
-    --surface-2:#212A2D;
-    --surface-3:#283134;
-    --border:#2C3639;
-    --text:#EEEAE1;
-    --text-dim:#9AA3A0;
-    --text-faint:#657270;
-    --gold:#CDA349;
-    --gold-strong:#E6BD5C;
-    --gold-ink:#241C0B;
-    --pine:#3C7C5C;
-    --pine-soft:#1E332A;
-    --rust:#BD5D45;
-    --rust-soft:#2E1F1A;
-    --radius:16px;
-    --radius-sm:10px;
-    --font-display:'Oswald',sans-serif;
-    --font-body:'Inter',sans-serif;
+    --bg:#10110C;
+    --bg-2:#0A0B07;
+    --surface:#17180F;
+    --surface-2:#1E2013;
+    --surface-3:#262918;
+    --border:#2C2F1C;
+    --text:#FFFFFF;
+    --text-dim:#B9BCA6;
+    --text-faint:#6C6F5C;
+    --gold:#D7FC00;
+    --gold-strong:#E7FF4D;
+    --gold-ink:#10110C;
+    --pine:#5C7A0F;
+    --pine-soft:#1C2008;
+    --rust:#FF5B4D;
+    --rust-soft:#2B120D;
+    --radius:18px;
+    --radius-sm:12px;
+    --font-display:'Manrope',sans-serif;
+    --font-body:'Manrope',sans-serif;
     --font-mono:'JetBrains Mono',monospace;
+    --glow:0 0 26px rgba(215,252,0,0.35);
   }
   *{box-sizing:border-box;}
   html,body{margin:0;padding:0;}
   body{
     background:
-      radial-gradient(ellipse 900px 500px at 50% -10%, #1a2b23 0%, transparent 60%),
+      radial-gradient(ellipse 900px 500px at 50% -10%, rgba(215,252,0,0.08) 0%, transparent 60%),
       var(--bg);
     color:var(--text);
     font-family:var(--font-body);
@@ -56,8 +57,10 @@
   /* ---------- HEADER ---------- */
   header{
     position:sticky;top:0;z-index:20;
-    background:rgba(17,22,26,0.92);
-    backdrop-filter:blur(10px);
+    background:
+      linear-gradient(180deg, rgba(16,17,12,0.5) 0%, rgba(16,17,12,0.85) 65%, rgba(16,17,12,0.97) 100%),
+      url('https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?fm=jpg&q=70&w=1200&auto=format&fit=crop') center 22% / cover no-repeat;
+    backdrop-filter:blur(6px);
     border-bottom:1px solid var(--border);
     padding:14px 18px 12px;
   }
@@ -67,11 +70,12 @@
   }
   .brand h1{
     font-family:var(--font-display);
-    font-size:19px;
-    font-weight:600;
-    letter-spacing:0.06em;
+    font-size:21px;
+    font-weight:800;
+    letter-spacing:-0.01em;
     margin:0;
-    text-transform:uppercase;
+    text-transform:none;
+    text-shadow:0 2px 10px rgba(0,0,0,0.6);
   }
   .brand h1 span{color:var(--gold);}
   .version-tag{
@@ -138,11 +142,12 @@
     overflow:hidden;text-overflow:ellipsis;
   }
   .day-pill.active{
-    background:linear-gradient(180deg, var(--pine) 0%, var(--pine-soft) 100%);
-    border-color:var(--pine);
+    background:var(--gold);
+    border-color:var(--gold);
+    box-shadow:0 0 18px rgba(215,252,0,0.3);
   }
-  .day-pill.active .d{color:#F4FBF6;}
-  .day-pill.active .s{color:#BFE0CC;}
+  .day-pill.active .d{color:var(--gold-ink);font-weight:800;}
+  .day-pill.active .s{color:#31350D;}
 
   /* ---------- MAIN ---------- */
   main{flex:1;padding:16px 16px 100px;}
@@ -212,8 +217,8 @@
     background:var(--pine-soft);border:1px solid var(--pine);
     border-radius:var(--radius);padding:14px;margin-bottom:16px;
   }
-  .autofill-box .excel-db-title{color:#BFE0CC;}
-  .autofill-box .excel-db-desc{color:#BFE0CC;opacity:0.85;}
+  .autofill-box .excel-db-title{color:#C7CBA0;}
+  .autofill-box .excel-db-desc{color:#C7CBA0;opacity:0.85;}
   .autofill-box .field{background:var(--surface);}
   .checkbox-row{
     display:flex;gap:14px;padding-top:2px;
@@ -326,10 +331,10 @@
     flex-shrink:0;
   }
   .plate.filled{
-    background:linear-gradient(155deg, var(--gold-strong), var(--gold) 60%, #9c7d31);
+    background:var(--gold);
     border-color:var(--gold-strong);
     color:var(--gold-ink);
-    box-shadow:0 0 0 3px rgba(205,163,73,0.15);
+    box-shadow:0 0 14px rgba(215,252,0,0.55);
   }
 
   .set-rows{display:flex;flex-direction:column;gap:8px;}
@@ -388,14 +393,14 @@
     border-radius:var(--radius);padding:14px 16px;margin-bottom:16px;
   }
   .baseline-card .tt{
-    font-family:var(--font-mono);font-size:11px;color:#BFE0CC;
+    font-family:var(--font-mono);font-size:11px;color:#C7CBA0;
     text-transform:uppercase;letter-spacing:.08em;margin-bottom:8px;
   }
   .tt-row{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:2px;}
   .tt-row .tt{margin-bottom:0;}
   .baseline-grid{display:flex;flex-wrap:wrap;gap:14px 22px;}
-  .baseline-grid div{font-size:12px;color:#DDEFE3;}
-  .baseline-grid b{display:block;font-family:var(--font-mono);font-size:16px;color:#F4FBF6;}
+  .baseline-grid div{font-size:12px;color:#E6EBC0;}
+  .baseline-grid b{display:block;font-family:var(--font-mono);font-size:16px;color:#F5FF9E;}
 
   .history-table{width:100%;border-collapse:collapse;margin-top:6px;font-size:12px;}
   .history-table th{
@@ -465,9 +470,9 @@
     aspect-ratio:1;border-radius:4px;
     background:var(--surface-3);border:1px solid var(--border);
   }
-  .consistency-cell.p1{background:rgba(205,163,73,0.28);border-color:rgba(205,163,73,0.4);}
-  .consistency-cell.p2{background:rgba(205,163,73,0.52);border-color:rgba(205,163,73,0.6);}
-  .consistency-cell.p3{background:rgba(230,189,92,0.78);border-color:var(--gold);}
+  .consistency-cell.p1{background:rgba(215,252,0,0.28);border-color:rgba(215,252,0,0.4);}
+  .consistency-cell.p2{background:rgba(215,252,0,0.52);border-color:rgba(215,252,0,0.6);}
+  .consistency-cell.p3{background:rgba(215,252,0,0.7);border-color:var(--gold);}
   .consistency-cell.p4{
     background:linear-gradient(155deg, var(--gold-strong), var(--gold) 70%);
     border-color:var(--gold-strong);
@@ -483,30 +488,34 @@
     background:var(--surface-3);border:1px solid var(--border);
     flex-shrink:0;
   }
-  .legend-swatch.p1{background:rgba(205,163,73,0.28);border-color:rgba(205,163,73,0.4);}
-  .legend-swatch.p2{background:rgba(205,163,73,0.52);border-color:rgba(205,163,73,0.6);}
-  .legend-swatch.p3{background:rgba(230,189,92,0.78);border-color:var(--gold);}
+  .legend-swatch.p1{background:rgba(215,252,0,0.28);border-color:rgba(215,252,0,0.4);}
+  .legend-swatch.p2{background:rgba(215,252,0,0.52);border-color:rgba(215,252,0,0.6);}
+  .legend-swatch.p3{background:rgba(215,252,0,0.7);border-color:var(--gold);}
   .legend-swatch.p4{background:linear-gradient(155deg, var(--gold-strong), var(--gold) 70%);border-color:var(--gold-strong);}
   .chart-title{font-family:var(--font-display);font-size:14px;letter-spacing:.02em;padding:0 4px 10px;}
   .pr-badge{
     display:inline-block;font-family:var(--font-mono);font-size:10px;
-    background:var(--gold);color:var(--gold-ink);border-radius:5px;
-    padding:2px 6px;margin-left:6px;font-weight:700;vertical-align:middle;
+    background:var(--gold);color:var(--gold-ink);border-radius:999px;
+    padding:2px 8px;margin-left:6px;font-weight:800;vertical-align:middle;
+    box-shadow:0 0 10px rgba(215,252,0,0.4);
   }
 
   /* ---------- BUTTONS ---------- */
   .btn{
-    width:100%;padding:13px;border-radius:12px;border:1px solid var(--border);
-    background:var(--surface-2);color:var(--text);font-weight:600;font-size:13.5px;
+    width:100%;padding:14px;border-radius:999px;border:1px solid var(--border);
+    background:var(--surface-2);color:var(--text);font-weight:700;font-size:13.5px;
     display:flex;align-items:center;justify-content:center;gap:8px;
-    margin-top:6px;
+    margin-top:6px;transition:box-shadow .2s, transform .1s;
   }
   .btn.primary{
-    background:linear-gradient(180deg, var(--gold-strong), var(--gold));
-    border-color:var(--gold-strong);color:var(--gold-ink);
+    background:var(--gold);
+    border-color:var(--gold);color:var(--gold-ink);
+    box-shadow:var(--glow);
+    font-weight:800;
   }
   .btn.danger{
     background:var(--rust-soft);border-color:var(--rust);color:var(--rust);
+    border-radius:999px;
   }
   .btn.danger:active{background:var(--rust);color:#1c0f0b;}
   .btn:active{transform:scale(0.98);}
@@ -515,7 +524,7 @@
   nav.bottom{
     position:fixed;left:0;right:0;bottom:0;z-index:20;
     max-width:560px;margin:0 auto;
-    background:rgba(17,22,26,0.94);backdrop-filter:blur(10px);
+    background:rgba(16,17,12,0.94);backdrop-filter:blur(10px);
     border-top:1px solid var(--border);
     display:flex;padding:8px 10px calc(10px + env(safe-area-inset-bottom));
     gap:6px;
@@ -523,11 +532,15 @@
   nav.bottom button{
     flex:1;background:none;border:none;color:var(--text-faint);
     display:flex;flex-direction:column;align-items:center;gap:3px;
-    padding:6px 4px;border-radius:10px;font-size:10.5px;
+    padding:7px 4px;border-radius:999px;font-size:10.5px;
     font-family:var(--font-mono);letter-spacing:.03em;
+    transition:background .2s, color .2s;
   }
   nav.bottom button svg{width:19px;height:19px;}
-  nav.bottom button.active{color:var(--gold-strong);background:rgba(205,163,73,0.09);}
+  nav.bottom button.active{
+    color:var(--gold-ink);background:var(--gold);
+    font-weight:700;box-shadow:0 0 16px rgba(215,252,0,0.3);
+  }
 
   /* toast */
   .toast{
@@ -562,7 +575,7 @@
   <header>
     <div class="brand">
       <div>
-        <h1>WORKOUT <span>·</span> TRACKER <span class="version-tag">v1.0 by Jin</span></h1>
+        <h1>Workout <span>·</span> Tracker <span class="version-tag">v1.0 by Jin</span></h1>
         <div class="tagline">12-week strength log</div>
       </div>
       <a class="music-btn" id="musicBtn" href="https://www.youtube.com/results?search_query=운동+플레이리스트" target="_blank" rel="noopener" aria-label="운동 음악 찾기">
@@ -1831,8 +1844,8 @@
             <div>허리<b>${base.waist || '-'}cm</b></div>
             <div>배꼽<b>${base.navel || '-'}cm</b></div>
           </div>
-          ${base.memo ? `<div style="margin-top:8px;font-size:11px;color:#BFE0CC;">${base.memo}</div>` : ''}
-        ` : `<div style="font-size:12px;color:#BFE0CC;margin-top:4px;">아직 시작 기록이 없어요. '편집'을 눌러 본인의 시작 수치를 입력해보세요.</div>`}
+          ${base.memo ? `<div style="margin-top:8px;font-size:11px;color:#C7CBA0;">${base.memo}</div>` : ''}
+        ` : `<div style="font-size:12px;color:#C7CBA0;margin-top:4px;">아직 시작 기록이 없어요. '편집'을 눌러 본인의 시작 수치를 입력해보세요.</div>`}
       </div>
     `;
 
