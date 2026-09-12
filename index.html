@@ -4,6 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>Workout Tracker</title>
+<link rel="manifest" href="data:application/manifest+json,%7B%22name%22%3A%20%22Workout%20Tracker%22%2C%20%22short_name%22%3A%20%22Workout%22%2C%20%22start_url%22%3A%20%22.%22%2C%20%22display%22%3A%20%22standalone%22%2C%20%22background_color%22%3A%20%22%2310110C%22%2C%20%22theme_color%22%3A%20%22%2310110C%22%2C%20%22icons%22%3A%20%5B%7B%22src%22%3A%20%22data%3Aimage/png%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAD70lEQVR4nO3du24TUQBFUQdRukgKPob/L/gYiqRwHwpkCaF4PI/7nLNWGyke8Nm%2BYwjmcgEAAAAAOLWX3hewxevb9bP3NbDOx/ttim0Ne5HGfj4jRjHUBRl9jlFiGOIiDD9X7xC6Prjhc9crhC4Pavg80jqEpg9m%2BKzVKoRvLR7kcjF%2Btmm1l%2BqVGT5H1TwNqp4Axk8JNXdULQDjp6Rae6oSgPFTQ41dFQ/A%2BKmp9L6KBmD8tFByZ8UCMH5aKrW3IgEYPz2U2N3hAIyfno7u71AAxs8Ijuyw2Y9CwIh2B%2BDVn5Hs3eOuAIyfEe3ZpVsgom0OwKs/I9u6TycA0TYF4NWfGWzZqROAaKsD8OrPTNbu1QlAtFUBePVnRmt26wQgmgCI9jQAtz/M7Nl%2BnQBEEwDRBEA0ARBtMQBvgDmDpR07AYgmAKIJgGgCIJoAiCYAogmAaAIgmgCIJgCiCYBoAiCaAIgmAKIJgGgCIJoAiCYAogmAaN97X8Cv37fi3/Pnj2vx78lfZ3u%2BXpa%2BWPMfxdf4jfyfEMqZ/fn6eL99ufUut0AtfjNbPs7Znfn58h6AaM0DaF25U%2BCYsz9fTgCiCYBoAiCaAIgmAKIJgGgCIJoAiCYAogmAaAIgmgCIJgCiCYBoAiCaAIgmAKIJgGgCIJoAiCYAonX/ZLgWfDIEjzgBiCYAogmAaAIgmgCIJgCiCYBoAiCaAIgmAKIJgGgCIJoAiCYAokX8OLT/L3i/s/8ouROAaAIgmgCIJgCiCYBoAiCaAIgmAKIJgGgCIJoAiCYAogmAaAIgmgCIJgCiCYBoAiCaAIgmAKIJgGjNA2j9CQ0%2BEeKYsz9fpz4BjH8uPZ6vLgG0%2BIUafzlnfr5elr74%2Bnb9rH0BNT54yfjrmfX5%2Bni/fbn17gFAC48COPV7AHhGAEQTANEEQDQBEE0ARBMA0QRANAEQTQBEEwDRBEA0ARBNAEQTANEEQDQBEE0ARBMA0RYDePTvKGEmSzt2AhBNAEQTANEEQLSnAXgjzMye7dcJQDQBEG1VAG6DmNGa3ToBiLY6AKcAM1m7VycA0TYF4BRgBlt26gQg2uYAnAKMbOs%2BnQBE2xWAU4AR7dnl7hNABIxk7x7dAhHtUABOAUZwZIeHTwAR0NPR/RW5BRIBPZTYXbH3ACKgpVJ7K/omWAS0UHJnxf8USATUVHpfVf4YVATUUGNX1f4eQASUVGtPVf8iTASUUHNHzQb6%2Bnb9bPVYnEOLF9BmPwrhNGCLVnvpMkqnAY%2B0fqHs%2BqosBO563SEMcVsihFy9b42HCOBOCDl6D/9uiIv4ihjOZ5TR/2u4C1oiinmMOHYAAAAAUv0BFSUJxKpGbnQAAAAASUVORK5CYII%3D%22%2C%20%22sizes%22%3A%20%22192x192%22%2C%20%22type%22%3A%20%22image/png%22%7D%2C%20%7B%22src%22%3A%20%22data%3Aimage/png%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAANIElEQVR4nO3cPXIVSRpA0WKiTRlgsBj2b/Ri2gBDPmNMTIgGhN7Tq5/MvOcsQFHKrKrvkqVg2wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGBNH66%2BAM7x8dPT96uvAZjHt6/P5sPibPAiDHjgTAJhfjZwQoY9MCJRMBebNQEDH5iRIBibzRmQgQ%2BsSBCMxWYMwtAHSsTA9WzAhQx9ADFwFYt%2BMkMf4HVi4DwW%2BiQGP8DthMDxLPCBDH2Ax4mBY1jUAxj8APsTAvuymDsy%2BAGOJwT2YRF3YPADnE8IPMbiPcDgB7ieEHgfi/YOBj/AeITAff5z9QXMxvAHGJP3833U0o3cWADzcBrwNgv0BoMfYF5C4HU%2BAfyB4Q8wN%2B/x1ymj33DDAKzHacC/OQH4ieEPsCbv938TAD9wcwCszXv%2BheOQzQ0BUFT/JJA/ATD8AZrq7/90ANQ3H6CuPAeSxx/lDQfg92qfBHInAIY/AL9Tmw%2BpAKhtLgD3Kc2JTACUNhWA96vMi0QAVDYTgH0U5sbyAVDYRAD2t/r8WDoAVt88AI618hxZNgBW3jQAzrPqPFkyAFbdLACuseJcWS4AVtwkAK632nxZKgBW2xwAxrLSnFkmAFbaFADGtcq8WSIAVtkMAOawwtyZPgBW2AQA5jP7/Jk6AGZffADmNvMcmjYAZl50ANYx6zyaMgBmXWwA1jTjXJoyAACAx0wXADNWFgDrm20%2BTRUAsy0uAC0zzalpAmCmRQWga5Z5NU0AAAD7mSIAZqkpANi2OebW8AEwwyICwM9Gn19DB8DoiwcAfzLyHBs6AACAYwwbACNXEwDcatR5NmQAjLpYAPAeI861IQMAADjWcAEwYiUBwKNGm2/DBQAAcLyhAmC0OgKAPY0054YJgJEWBQCOMsq8GyYAAIDzDBEAo9QQAJxhhLk3RAAAAOe6PABGqCAAONvV8%2B/yAAAAzndpAFxdPwBwpSvnoBMAAAi6LAD86x8ArpuHTgAAIOiSAPCvfwB4ccVcdAIAAEECAACCTg8Ax/8A8Kuz56MTAAAIOjUA/OsfAF535px0AgAAQQIAAIJOCwDH/wDwtrPmpRMAAAgSAAAQdEoAOP4HgNudMTedAABAkAAAgKDDA8DxPwDc7%2Bj56QQAAIIEAAAECQAACDo0AHz/B4D3O3KOOgEAgCABAABBAgAAgg4LAN//AeBxR81TJwAAECQAACBIAABAkAAAgKBDAsAfAALAfo6Yq04AACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAI2j0A/B8AALC/veerEwAACBIAABAkAAAgSAAAQJAAAIAgAQAAQQIAAIIEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQQIAAIIEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQQIAAIIEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQQIAAIIEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQQIAAIIEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQX9dfQGr%2Bvuf56svYVdfPj9dfQnAHbyDeMuHvX/gx09P3/f%2BmbNY7YF7jQcRxuQdtL5vX593m9sCYAeVh%2B5n5YcQRuId1LFnAPgbgAdVH7xta//uMIryc1j%2B3fcgAB7g5rMGcCXPnzV4hAB4JzfdC2sB5/PcvbAW7yMA3sHN9itrAufxvP3KmtxPANzJTfY6awPH85y9ztrcRwAAQJAAuIO6fJs1guN4vt5mjW4nAAAgSAAAQJAAuJFjpdtZK9if5%2Bp21uo2AgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBf119Aazt73%2Ber74EmNqXz09XXwKLEgAcwuCHfXiWOIpPAAAQJAAAIEgAAECQAACAIAEAAEECAACCBAAABAkAAAgSAAAQJAAAIEgAAECQAACAIAEAAEECAACCBAAABAkAAAgSAAAQJAAAIEgAAECQAACAIAEAAEECAACCBAAABAkAAAgSAAAQJAAAIEgAAECQAACAIAEAAEECAACCBAAABAkAAAgSAAAQJAAAIEgAcIgvn5%2B2L5%2Bfrr4MmJ5niaP8dfUFsDYvLoAxOQEAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAC40ZfPT1dfwjSsFezPc3U7a3UbAQAAQQIAAIIEwB0cK73NGsFxPF9vs0a3EwDsxoMHXMk76D4C4E5uMOBK3kHsRQC8gwfwV9YEzuN5%2B5U1uZ8AeCc32wtrAefz3L2wFu8jAB7gprMGcCXPnzV4xIe9f%2BDHT0/f9/6Zo/v7n%2BerL%2BF0HjoYh3dQx7evz7vNbQGwo8pDWH3wYHTeQesTABNY7UEsP3AwI%2B%2BgNQkAAAjaMwD8ESAABAkAAAgSAAAQJAAAIEgAAECQAACAIAEAAEECAACCBAAABAkAAAgSAAAQJAAAIEgAAECQAACAIAEAAEECAACCBAAABAkAAAgSAAAQJAAAIEgAAECQAACAIAEAAEECAACCBAAABAkAAAgSAAAQJAAAIEgAAECQAACAIAEAAEECAACCBAAABAkAAAgSAAAQJAAAIEgAAECQAACAIAEAAEECAACCBAAABAkAAAgSAAAQJAAAIEgAAECQAACAoN0D4NvX5w97/0wAqNt7vjoBAIAgAQAAQQIAAIIEAAAECQAACBIAABAkAAAg6JAA8H8BAMB%2BjpirTgAAIEgAAECQAACAIAEAAEGHBYA/BASAxx01T50AAECQAACAIAEAAEGHBoC/AwCA9ztyjjoBAIAgAQAAQQIAAIIODwB/BwAA9zt6fjoBAIAgAQAAQacEgM8AAHC7M%2BamEwAACBIAABB0WgD4DAAAbztrXjoBAIAgAQAAQacGgM8AAPC6M%2BekEwAACDo9AJwCAMCvzp6PTgAAIEgAAEDQJQHgMwAAvLhiLjoBAICgywLAKQAAXDcPnQAAQNClAeAUAICyK%2BegEwAACLo8AJwCAFB09fy7PAAAgPMNEQBXVxAAnGmEuTdEAAAA5xomAEaoIQA42ijzbpgA2LZxFgUAjjDSnBsqAACAcwwXACPVEQDsZbT5NlwAAADHGzIARqskAHjEiHNtyADYtjEXCwDuNeo8GzYAAIDjDB0Ao1YTANxi5Dk2dABs29iLBwCvGX1%2BDR8A2zb%2BIgLAj2aYW1MEAACwr2kCYIaaAoBZ5tU0AbBt8ywqAE0zzampAmDb5lpcADpmm0/TBQAA8LgpA2C2ygJgbTPOpSkDYNvmXGwA1jPrPJo2ALZt3kUHYA0zz6GpA2Db5l58AOY1%2B/yZPgC2bf5NAGAuK8ydJQJg29bYDADGt8q8WSYAtm2dTQFgTCvNmaUCYNvW2hwAxrHafFkuALZtvU0C4ForzpUlA2Db1twsAM636jxZNgC2bd1NA%2BAcK8%2BRpQNg29bePACOs/r8WD4Atm39TQRgX4W5kQiAbWtsJgCPq8yLTABsW2dTAXif0pxIBcC2tTYXgNvV5kPql/3Zx09P36%2B%2BBgCuVRv8/5c7AfhRddMB%2BJ/yHEgHwLa1Nx%2BgrP7%2BT//yP/NJAGB99cH/f/kTgB%2B5KQDW5j3/QgD8xM0BsCbv93%2BzGH/gkwDA/Az%2B33MC8AduGoC5eY%2B/zsLcyGkAwDwM/rdZoDsJAYBxGfy38wngTm4ugDF5P9/HYj3AaQDA9Qz%2B97FoOxACAOcz%2BB9j8XYkBACOZ/DvwyIeQAgA7M/g35fFPJAQAHicwX8Mi3oSMQBwO0P/eBb4ZEIA4HUG/3ks9IXEAIChfxWLPggxAJQY%2BtezAQMSA8CKDP2x2IwJCAJgRgb%2B2GzOhAQBMCIDfy42axGiADiTYT8/GxghEIB7GPAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwCL%2BCxNksFJp1/0IAAAAAElFTkSuQmCC%22%2C%20%22sizes%22%3A%20%22512x512%22%2C%20%22type%22%3A%20%22image/png%22%7D%5D%7D">
+<link rel="icon" type="image/png" sizes="512x512" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAANIElEQVR4nO3cPXIVSRpA0WKiTRlgsBj2b/Ri2gBDPmNMTIgGhN7Tq5/MvOcsQFHKrKrvkqVg2wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGBNH66+AM7x8dPT96uvAZjHt6/P5sPibPAiDHjgTAJhfjZwQoY9MCJRMBebNQEDH5iRIBibzRmQgQ+sSBCMxWYMwtAHSsTA9WzAhQx9ADFwFYt+MkMf4HVi4DwW+iQGP8DthMDxLPCBDH2Ax4mBY1jUAxj8APsTAvuymDsy+AGOJwT2YRF3YPADnE8IPMbiPcDgB7ieEHgfi/YOBj/AeITAff5z9QXMxvAHGJP3833U0o3cWADzcBrwNgv0BoMfYF5C4HU+AfyB4Q8wN+/x1ymj33DDAKzHacC/OQH4ieEPsCbv938TAD9wcwCszXv+heOQzQ0BUFT/JJA/ATD8AZrq7/90ANQ3H6CuPAeSxx/lDQfg92qfBHInAIY/AL9Tmw+pAKhtLgD3Kc2JTACUNhWA96vMi0QAVDYTgH0U5sbyAVDYRAD2t/r8WDoAVt88AI618hxZNgBW3jQAzrPqPFkyAFbdLACuseJcWS4AVtwkAK632nxZKgBW2xwAxrLSnFkmAFbaFADGtcq8WSIAVtkMAOawwtyZPgBW2AQA5jP7/Jk6AGZffADmNvMcmjYAZl50ANYx6zyaMgBmXWwA1jTjXJoyAACAx0wXADNWFgDrm20+TRUAsy0uAC0zzalpAmCmRQWga5Z5NU0AAAD7mSIAZqkpANi2OebW8AEwwyICwM9Gn19DB8DoiwcAfzLyHBs6AACAYwwbACNXEwDcatR5NmQAjLpYAPAeI861IQMAADjWcAEwYiUBwKNGm2/DBQAAcLyhAmC0OgKAPY0054YJgJEWBQCOMsq8GyYAAIDzDBEAo9QQAJxhhLk3RAAAAOe6PABGqCAAONvV8+/yAAAAzndpAFxdPwBwpSvnoBMAAAi6LAD86x8ArpuHTgAAIOiSAPCvfwB4ccVcdAIAAEECAACCTg8Ax/8A8Kuz56MTAAAIOjUA/OsfAF535px0AgAAQQIAAIJOCwDH/wDwtrPmpRMAAAgSAAAQdEoAOP4HgNudMTedAABAkAAAgKDDA8DxPwDc7+j56QQAAIIEAAAECQAACDo0AHz/B4D3O3KOOgEAgCABAABBAgAAgg4LAN//AeBxR81TJwAAECQAACBIAABAkAAAgKBDAsAfAALAfo6Yq04AACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAI2j0A/B8AALC/veerEwAACBIAABAkAAAgSAAAQJAAAIAgAQAAQQIAAIIEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQQIAAIIEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQQIAAIIEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQQIAAIIEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQQIAAIIEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQX9dfQGr+vuf56svYVdfPj9dfQnAHbyDeMuHvX/gx09P3/f+mbNY7YF7jQcRxuQdtL5vX593m9sCYAeVh+5n5YcQRuId1LFnAPgbgAdVH7xta//uMIryc1j+3fcgAB7g5rMGcCXPnzV4hAB4JzfdC2sB5/PcvbAW7yMA3sHN9itrAufxvP3KmtxPANzJTfY6awPH85y9ztrcRwAAQJAAuIO6fJs1guN4vt5mjW4nAAAgSAAAQJAAuJFjpdtZK9if5+p21uo2AgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBf119Aazt73+er74EmNqXz09XXwKLEgAcwuCHfXiWOIpPAAAQJAAAIEgAAECQAACAIAEAAEECAACCBAAABAkAAAgSAAAQJAAAIEgAAECQAACAIAEAAEECAACCBAAABAkAAAgSAAAQJAAAIEgAAECQAACAIAEAAEECAACCBAAABAkAAAgSAAAQJAAAIEgAAECQAACAIAEAAEECAACCBAAA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">
+<link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAYAAAA9zQYyAAADkElEQVR4nO3dvXLbRhhAUTmTUoVd5GHy/kUeJoVdqLerzCiZiATA3QV0eU6rGQLSXn5a/oB8eQEAAAAALubL2Sdwz9dvrz/PPgf+7cf3t8t2c7kTE/Dnc6XAL3EiIu44O+7TDi7ivjPiXn5AIT+flWH/tupALy9iflYr133JPUfI/GP2tJ4+ocXMe7N7mHZvETL3zJjWUya0mNliRifDgxYze4zuZWjQYuaIkd0MC1rMPGJUP0OCFjMjjOjo4aDFzEiP9vRQ0GJmhke6WvrSN8x2OGjTmZmO9nUoaDGzwpHObDlI2R206cxKe3vbFbSYOcOe7mw5SNkctOnMmbb2Z0KTImhSNgVtu8EVbOnQhCZF0KTcDdp2gyu516MJTYqgSRE0KTeDtn/mim51aUKTImhSBE2KoEkRNCmCJkXQpAiaFEGTImhSBE2KoEkRNCmCJkXQpAiaFEGTImhSfj/joH/9/Tb09v7843Xo7T2rwrrc/PLwGdcUjv6jvSfs4z7bunz0xfdLtxwz/2grbr+qtC7Lgl71S4l6n9q6eFBIiqBJETQpgiZF0KQImhRBkyJoUgRNiqBJETQpgiZF0KQImhRBkyJoUgRNiqBJETQpgiZF0KSc8kEzs7ny+3mZ0KQImhRBkyJoUgRNiqBJETQpgiZF0KQImhRBkyJoUpJvTvLlQdvV3shlQpMiaFIETYqgSRE0KYImRdCkCJoUQZMiaFIETYqgSRE0KYImRdCkCJoUQZMiaFIETYqgSVkW9KoLV10gu09tXUxoUpYGPfteajofU1qXL7d++PXb688ZBx39WRBCHuMzrcuP72//2+4pQcOjPgraHpoUQZMiaFIETYqgSRE0KYImRdCkCJoUQZMiaFIETYqgSRE0KYImRdCkCJoUQZNyM+iPLnOBM93q0oQmRdCkCJqUu0HbR3Ml93o0oUkRNCmbgrbt4Aq2dGhCkyJoUjYHbdvBmbb2Z0KTsitoU5oz7Olu94QWNSvt7c2Wg5RDQZvSrHCks8MTWtTMdLQvWw5SHgralGaGR7p6eEKLmpEe7WnIlkPUjDCio2F7aFHziFH9DH1QKGqOGNnN8Gc5RM0eo3uZ8rSdqNliRifTw/N94fzXzIE3/YUV05r3ZvewNDbT+nmtGmxLX/o2rZ/TynU/LTDTuu+MAXaJiSnujrP/C18i6PfE/fmcHfF7lzmRjwj8eq4UMAAAAEDTLzKl+OsYSYT8AAAAAElFTkSuQmCC">
+<meta name="theme-color" content="#10110C">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Workout">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
 <style>
@@ -38,7 +45,7 @@
     background-image:
       linear-gradient(180deg, rgba(16,17,12,0.82) 0%, rgba(16,17,12,0.93) 45%, var(--bg) 78%),
       radial-gradient(ellipse 900px 500px at 50% -10%, rgba(215,252,0,0.08) 0%, transparent 60%),
-      url('https://images.unsplash.com/photo-1685633224966-fd18820f6016?w=1400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGd5bSUyMHRvb2x8ZW58MHx8MHx8fDA%3D');
+      url('https://images.unsplash.com/photo-1685633224966-fd18820f6016?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGd5bSUyMHRvb2x8ZW58MHx8MHx8fDA%3D');
     background-repeat:no-repeat, no-repeat, no-repeat;
     background-position: top, top, top center;
     background-size: 100% 100vh, 100% 100vh, cover;
@@ -65,7 +72,7 @@
     position:sticky;top:0;z-index:20;
     background:
       linear-gradient(180deg, rgba(16,17,12,0.5) 0%, rgba(16,17,12,0.85) 65%, rgba(16,17,12,0.97) 100%),
-      var(--header-img, url('https://images.unsplash.com/photo-1685633224784-6389eb0c3157?w=1400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTM3fHxneW0lMjB0b29sfGVufDB8fDB8fHww')) center 30% / cover no-repeat;
+      var(--header-img, url('https://images.unsplash.com/photo-1685633224784-6389eb0c3157?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTM3fHxneW0lMjB0b29sfGVufDB8fDB8fHww')) center 30% / cover no-repeat;
     backdrop-filter:blur(6px);
     border-bottom:1px solid var(--border);
     padding:14px 18px 12px;
@@ -177,6 +184,21 @@
     display:flex;align-items:center;gap:10px;margin:0 0 14px;
   }
   .log-header-row .section-label{flex:1;margin:0;}
+  .progress-row{
+    display:flex;align-items:center;justify-content:space-between;
+    gap:8px;margin-bottom:14px;flex-wrap:wrap;
+  }
+  .progress-chip{
+    font-family:var(--font-mono);font-size:11px;font-weight:700;
+    background:var(--surface-2);border:1px solid var(--border);
+    color:var(--text-dim);padding:5px 10px;border-radius:999px;
+  }
+  .load-lastweek-btn{
+    font-family:var(--font-mono);font-size:11px;font-weight:600;
+    background:var(--pine-soft);border:1px solid var(--pine);
+    color:var(--gold-strong);padding:6px 11px;border-radius:999px;
+  }
+  .load-lastweek-btn:active{background:var(--pine);color:var(--gold-ink);}
   .edit-toggle-btn{
     flex-shrink:0;font-family:var(--font-mono);font-size:11px;
     background:var(--surface-2);border:1px solid var(--border);color:var(--text-dim);
@@ -372,6 +394,8 @@
     background:var(--surface-3);
   }
   .set-inputs input::placeholder{color:var(--text-faint);font-weight:500;}
+  .set-inputs input.hint-filled{border-style:dashed;}
+  .set-inputs input.hint-filled::placeholder{color:rgba(215,252,0,0.55);font-weight:600;font-size:11px;}
   .unit{font-size:11px;color:var(--text-faint);white-space:nowrap;}
   .x-sep{color:var(--text-faint);font-size:12px;}
 
@@ -462,18 +486,18 @@
   .consistency-pct-label{font-size:12px;color:var(--text-faint);}
   .consistency-grid{
     display:grid;grid-template-columns:20px repeat(4, 1fr);
-    gap:5px;align-items:center;margin-bottom:10px;
+    gap:4px 5px;align-items:center;margin-bottom:10px;
   }
   .consistency-head{
     font-family:var(--font-mono);font-size:9.5px;color:var(--text-faint);
     text-align:center;padding-bottom:2px;
   }
   .consistency-week-label{
-    font-family:var(--font-mono);font-size:9px;color:var(--text-faint);
+    font-family:var(--font-mono);font-size:8.5px;color:var(--text-faint);
     text-align:right;padding-right:2px;
   }
   .consistency-cell{
-    aspect-ratio:1;border-radius:4px;
+    height:39px;border-radius:6px;
     background:var(--surface-3);border:1px solid var(--border);
   }
   .consistency-cell.p1{background:rgba(215,252,0,0.28);border-color:rgba(215,252,0,0.4);}
@@ -1090,11 +1114,25 @@
     const log = dayLog || {};
 
     const exList = getExercisesForWeek(state.day, state.week);
+
+    const doneCount = exList.filter(ex=>{
+      const vals = log[ex.id];
+      return vals && vals.some(s => s && (s.w || s.r || s.v));
+    }).length;
+
     let html = `
       <div class="log-header-row">
         <div class="section-label">${state.week}주차 · ${DAY_SUBS[state.day]}</div>
         <button class="edit-toggle-btn" id="editToggleBtn">✎ 종목 편집</button>
       </div>`;
+
+    if(exList.length > 0){
+      html += `
+      <div class="progress-row">
+        <div class="progress-chip">${doneCount} / ${exList.length} 종목 완료</div>
+        ${state.week > 1 ? `<button class="load-lastweek-btn" id="loadLastWeekBtn">↻ 지난주 기록 불러오기</button>` : ''}
+      </div>`;
+    }
 
     if(exList.length === 0){
       html += `<div class="empty-note">이 요일에 등록된 종목이 없어요.<br>'종목 편집'에서 운동을 추가해보세요.</div>`;
@@ -1110,7 +1148,41 @@
       state.editMode = true;
       renderLogPanel();
     });
+    const loadBtn = document.getElementById('loadLastWeekBtn');
+    if(loadBtn) loadBtn.addEventListener('click', loadLastWeekData);
     bindLogInputs();
+  }
+
+  async function loadLastWeekData(){
+    if(state.week <= 1){
+      showToast('1주차는 불러올 지난주가 없어요');
+      return;
+    }
+    const prevLog = await getJSON(keyLog(state.day, state.week - 1));
+    if(!prevLog){
+      showToast('지난주 기록이 없어요');
+      return;
+    }
+
+    const inputs = [...document.querySelectorAll('#panel-log input[data-ex]')];
+    let hintCount = 0;
+    inputs.forEach(inp=>{
+      if(inp.value !== '') return; // 이미 입력한 칸은 건드리지 않음
+      const exId = inp.dataset.ex, set = +inp.dataset.set, field = inp.dataset.field;
+      const sets = prevLog[exId];
+      const prevVal = sets && sets[set] ? sets[set][field] : undefined;
+      if(prevVal !== undefined && prevVal !== ''){
+        inp.placeholder = `지난주 ${prevVal}`;
+        inp.classList.add('hint-filled');
+        hintCount++;
+      }
+    });
+
+    if(hintCount === 0){
+      showToast('불러올 지난주 기록이 없어요');
+      return;
+    }
+    showToast(`지난주 기록 ${hintCount}칸 참고로 표시됨`);
   }
 
   /* ===================== EDIT MODE ===================== */
@@ -1337,7 +1409,11 @@
 
   function bindDeleteButtons(){
     document.querySelectorAll('.del-ex-btn').forEach(btn=>{
-      btn.onclick = ()=>{ btn.closest('.edit-ex-row').remove(); };
+      btn.onclick = ()=>{
+        const row = btn.closest('.edit-ex-row');
+        const name = row.querySelector('.edit-name').value.trim() || '이 운동';
+        if(confirm(`"${name}"을(를) 목록에서 뺄까요?`)) row.remove();
+      };
     });
   }
 
@@ -1563,7 +1639,10 @@
     }, 450);
 
     document.querySelectorAll('#panel-log input[data-ex]').forEach(inp=>{
-      inp.addEventListener('input', save);
+      inp.addEventListener('input', ()=>{
+        inp.classList.remove('hint-filled');
+        save();
+      });
     });
   }
 
@@ -1870,11 +1949,24 @@
       </div>
       <button class="btn primary" id="saveBodyBtn">이번 주 기록 저장</button>
 
+      <div class="section-label">체중 변화</div>
+      <div class="chart-card" id="weightChartArea"><div class="loading-wrap"><div class="spin"></div> 불러오는 중</div></div>
+
       <div class="section-label">전체 기록표</div>
       <div id="historyTableWrap"><div class="loading-wrap"><div class="spin"></div> 불러오는 중</div></div>
 
       <div class="section-label">데이터 내보내기</div>
       <button class="btn" id="exportBtn">전체 기록 CSV로 내보내기 (엑셀용)</button>
+
+      <div class="section-label">${state.week}주차 다짐 · 메모</div>
+      <div class="field full" style="margin-bottom:10px;">
+        <textarea id="weekNoteInput" placeholder="이번 주 마음가짐, 주의할 점, 스스로에게 하고 싶은 말을 자유롭게 적어보세요" style="min-height:70px;">${currentNote?.text ?? ''}</textarea>
+      </div>
+      <button class="btn" id="saveNoteBtn">메모 저장</button>
+      <div id="noteHistoryWrap" style="margin-top:12px;"></div>
+
+      <div class="section-label">지난 시즌 기록</div>
+      <div id="archiveListWrap"><div class="loading-wrap"><div class="spin"></div> 불러오는 중</div></div>
 
       <div class="section-label">백업 · 복원</div>
       <div style="font-size:11.5px;color:var(--text-faint);line-height:1.5;margin-bottom:10px;">
@@ -1884,17 +1976,11 @@
       <button class="btn" id="restoreBtn" style="margin-top:8px;">백업 파일 불러오기</button>
       <input type="file" id="restoreFileInput" accept="application/json,.json" style="display:none;">
 
-      <div class="section-label">${state.week}주차 다짐 · 메모</div>
-      <div class="field full" style="margin-bottom:10px;">
-        <textarea id="weekNoteInput" placeholder="이번 주 마음가짐, 주의할 점, 스스로에게 하고 싶은 말을 자유롭게 적어보세요" style="min-height:70px;">${currentNote?.text ?? ''}</textarea>
-      </div>
-      <button class="btn" id="saveNoteBtn">메모 저장</button>
-      <div id="noteHistoryWrap" style="margin-top:12px;"></div>
-
       <div class="section-label">시즌 마무리</div>
       <div style="font-size:12px;color:var(--text-faint);line-height:1.5;margin-bottom:10px;">
         12주 프로그램을 마쳤다면, 지금까지 기록을 CSV로 백업한 뒤 1주차부터 새로 시작할 수 있어요.
         가장 최근에 남긴 신체 기록이 있으면 새 시작값으로 자동 반영됩니다. 운동 종목 설정은 그대로 유지돼요.
+        지금 시즌 기록은 자동으로 위 '지난 시즌 기록'에 보관됩니다.
       </div>
       <button class="btn danger" id="newCycleBtn">12주 완료 · 새 시즌 시작</button>
     `;
@@ -1927,6 +2013,8 @@
     document.getElementById('newCycleBtn').addEventListener('click', startNewCycle);
     renderHistoryTable();
     renderNoteHistory();
+    drawWeightChart();
+    renderArchiveList();
   }
 
   async function saveWeekNote(){
@@ -2009,6 +2097,151 @@
           ${entries.map(e=>`<tr><td>${e.w}주</td><td>${e.d.weight||'-'}kg</td><td>${e.d.waist||'-'}cm</td><td>${e.d.navel||'-'}cm</td></tr>`).join('')}
         </tbody>
       </table>`;
+  }
+
+  async function drawWeightChart(){
+    const area = document.getElementById('weightChartArea');
+    if(!area) return;
+
+    const weeks = Array.from({length:12},(_,i)=>i+1);
+    let bodies, baseline;
+    try{
+      [bodies, baseline] = await withTimeout(
+        Promise.all([Promise.all(weeks.map(w=>getJSON(keyBody(w)))), getJSON('baselineRecord')]),
+        8000
+      );
+    }catch(e){
+      area.innerHTML = `<div class="empty-note">데이터를 불러오는 데 문제가 있었어요.</div>`;
+      return;
+    }
+
+    const points = [];
+    if(baseline && baseline.weight !== '' && baseline.weight !== undefined){
+      const v = parseFloat(baseline.weight);
+      if(!isNaN(v)) points.push({w:0, v});
+    }
+    weeks.forEach((w,i)=>{
+      const b = bodies[i];
+      if(b && b.weight !== '' && b.weight !== undefined){
+        const v = parseFloat(b.weight);
+        if(!isNaN(v)) points.push({w, v});
+      }
+    });
+
+    if(points.length < 2){
+      area.innerHTML = `<div class="empty-note">체중을 2회 이상 기록하면<br>변화 그래프가 나타나요.</div>`;
+      return;
+    }
+
+    const W = 320, H = 130, pad = 24;
+    const vals = points.map(p=>p.v);
+    const maxV = Math.max(...vals) * 1.03;
+    const minV = Math.min(...vals) * 0.97;
+    const xFor = w => pad + (w/12) * (W - pad*2);
+    const yFor = v => H - pad - ((v-minV)/(maxV-minV || 1)) * (H - pad*2);
+
+    const linePts = points.map(p=>`${xFor(p.w)},${yFor(p.v)}`).join(' ');
+    const dots = points.map((p,i)=>{
+      const isLast = i === points.length - 1;
+      return `<circle cx="${xFor(p.w)}" cy="${yFor(p.v)}" r="${isLast?5:3}" fill="${isLast?'var(--gold-strong)':'#FFFFFF'}" stroke="${isLast?'#10110C':'none'}" stroke-width="1.5"/>`;
+    }).join('');
+
+    const gridLines = [0,0.5,1].map(f=>{
+      const y = pad + f*(H-pad*2);
+      return `<line x1="${pad}" y1="${y}" x2="${W-pad}" y2="${y}" stroke="var(--border)" stroke-width="1"/>`;
+    }).join('');
+
+    const first = points[0].v;
+    const last = points[points.length-1].v;
+    const diff = Math.round((last-first)*10)/10;
+    const diffLabel = diff > 0 ? `+${diff}kg` : `${diff}kg`;
+    const diffColor = diff <= 0 ? 'var(--gold-strong)' : 'var(--rust)';
+
+    area.innerHTML = `
+      <svg viewBox="0 0 ${W} ${H}" style="width:100%;height:auto;">
+        ${gridLines}
+        <polyline points="${linePts}" fill="none" stroke="var(--gold)" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>
+        ${dots}
+      </svg>
+      <div style="text-align:center;font-family:var(--font-mono);font-size:12px;color:var(--text-dim);margin-top:6px;">
+        ${first}kg → ${last}kg <span style="color:${diffColor};font-weight:800;">(${diffLabel})</span>
+      </div>
+    `;
+  }
+
+  /* ===================== SEASON ARCHIVE ===================== */
+  async function archiveCurrentSeason(){
+    const keys = allDataKeys().filter(k =>
+      k !== 'settings' && k !== 'workoutConfig' && k !== 'baselineRecord'
+    );
+    const data = {};
+    for(const k of keys){
+      const raw = hasBridge
+        ? (await (async()=>{ try{ const r = await withTimeout(window.storage.get(k,false),6000); return r ? r.value : null; }catch(e){ return null; } })())
+        : localStorage.getItem(k);
+      if(raw !== null && raw !== undefined) data[k] = raw;
+    }
+
+    const baseline = await getJSON('baselineRecord');
+    let endWeight = null;
+    for(let w = 12; w >= 1; w--){
+      const b = await getJSON(keyBody(w));
+      if(b && b.weight){ endWeight = b.weight; break; }
+    }
+
+    const id = 'archive:' + Date.now();
+    const summary = {
+      id,
+      archivedAt: new Date().toISOString(),
+      startWeight: baseline?.weight || null,
+      endWeight
+    };
+
+    await setJSON(id, {summary, data});
+
+    const idxRaw = await getJSON('archiveIndex');
+    const idx = Array.isArray(idxRaw) ? idxRaw : [];
+    idx.push(summary);
+    await setJSON('archiveIndex', idx);
+  }
+
+  async function renderArchiveList(){
+    const wrap = document.getElementById('archiveListWrap');
+    if(!wrap) return;
+    const idx = await getJSON('archiveIndex');
+    if(!idx || idx.length === 0){
+      wrap.innerHTML = `<div class="empty-note">아직 완료된 시즌이 없어요.</div>`;
+      return;
+    }
+    wrap.innerHTML = [...idx].reverse().map(s=>{
+      const dateLabel = new Date(s.archivedAt).toLocaleDateString('ko-KR', {year:'numeric', month:'long', day:'numeric'});
+      const weightLabel = (s.startWeight && s.endWeight) ? `${s.startWeight}kg → ${s.endWeight}kg` : '체중 기록 없음';
+      return `
+        <div class="note-history-item">
+          <div class="note-history-week">${dateLabel} 완료</div>
+          <div class="note-history-text">${weightLabel}</div>
+          <button class="btn" data-archive-id="${s.id}" style="margin-top:8px;">이 시즌 JSON 다운로드</button>
+        </div>
+      `;
+    }).join('');
+    wrap.querySelectorAll('[data-archive-id]').forEach(btn=>{
+      btn.addEventListener('click', ()=>downloadArchive(btn.dataset.archiveId));
+    });
+  }
+
+  async function downloadArchive(id){
+    const record = await getJSON(id);
+    if(!record){
+      showToast('찾을 수 없어요');
+      return;
+    }
+    const blob = new Blob([JSON.stringify(record, null, 2)], {type:'application/json'});
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url; a.download = `season-${id.replace('archive:','')}.json`;
+    document.body.appendChild(a); a.click(); document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+    showToast('다운로드 완료');
   }
 
   /* ===================== JSON BACKUP / RESTORE ===================== */
@@ -2127,10 +2360,14 @@
     const proceed = confirm(
       'CSV 백업이 완료됐어요.\n\n' +
       '지금까지의 모든 주차 기록(운동 기록·신체 기록)을 지우고 1주차부터 새로 시작할까요?\n' +
+      '지금 시즌 기록은 앱 안 "지난 시즌 기록"에 자동 보관됩니다.\n' +
       '가장 최근 신체 기록이 있다면 새 시작값으로 자동 반영됩니다.\n' +
       '운동 종목 설정은 그대로 유지됩니다.'
     );
     if(!proceed) return;
+
+    showToast('지난 시즌 기록 보관 중...');
+    await archiveCurrentSeason();
 
     // 가장 최근에 기록된 주차의 신체 데이터를 새 시즌의 시작값(0주)으로 승계
     let newBaseline = null;
@@ -2201,11 +2438,11 @@
 
   /* ===================== INIT ===================== */
   const HEADER_IMAGES = [
-    'https://images.unsplash.com/photo-1590239480880-c723ff6c0169?w=1400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTEwfHxneW0lMjB0b29sfGVufDB8fDB8fHww',
-    'https://images.unsplash.com/photo-1602457470436-2e1e553ac820?w=1400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Njh8fGd5bSUyMHRvb2x8ZW58MHx8MHx8fDA%3D',
-    'https://images.unsplash.com/photo-1685633224901-d0d87b884517?w=1400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjE5fHxneW0lMjB0b29sfGVufDB8fDB8fHww',
-    'https://images.unsplash.com/photo-1685633224784-6389eb0c3157?w=1400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTM3fHxneW0lMjB0b29sfGVufDB8fDB8fHww',
-    'https://images.unsplash.com/photo-1651315283994-03ec73dc21f1?w=1400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDYzfHxneW0lMjB0b29sfGVufDB8fDB8fHww'
+    'https://images.unsplash.com/photo-1590239480880-c723ff6c0169?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTEwfHxneW0lMjB0b29sfGVufDB8fDB8fHww',
+    'https://images.unsplash.com/photo-1602457470436-2e1e553ac820?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Njh8fGd5bSUyMHRvb2x8ZW58MHx8MHx8fDA%3D',
+    'https://images.unsplash.com/photo-1685633224901-d0d87b884517?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjE5fHxneW0lMjB0b29sfGVufDB8fDB8fHww',
+    'https://images.unsplash.com/photo-1685633224784-6389eb0c3157?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTM3fHxneW0lMjB0b29sfGVufDB8fDB8fHww',
+    'https://images.unsplash.com/photo-1651315283994-03ec73dc21f1?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDYzfHxneW0lMjB0b29sfGVufDB8fDB8fHww'
   ];
   function applyRandomHeaderImage(){
     const pick = HEADER_IMAGES[Math.floor(Math.random() * HEADER_IMAGES.length)];
